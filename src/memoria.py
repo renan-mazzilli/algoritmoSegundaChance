@@ -1,4 +1,3 @@
-# memoria.py
 class Memoria:
     def __init__(self, quadros):
         self.quadros = quadros

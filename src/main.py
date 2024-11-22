@@ -1,4 +1,3 @@
-# main.py
 from entrada_usuario import EntradaUsuario
 from simulacao import SimulacaoSegundaChance
 

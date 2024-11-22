@@ -1,4 +1,3 @@
-# simulacao.py
 from memoria import Memoria
 
 class SimulacaoSegundaChance:

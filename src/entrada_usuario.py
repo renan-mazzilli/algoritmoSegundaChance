@@ -1,4 +1,3 @@
-# entrada_usuario.py
 class EntradaUsuario:
     @staticmethod
     def obter_entradas():
