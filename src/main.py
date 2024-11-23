@@ -1,14 +1,11 @@
-from entrada_usuario import EntradaUsuario
-from simulacao import SimulacaoSegundaChance
+from simulador import simular_fifo_clock
 
 def main():
-    # Recebe as entradas do usuário
-    paginas, quadros = EntradaUsuario.obter_entradas()
+    capacidade = int(input("Digite o número de quadros na memória: "))
+    sequencia_input = input("Digite a sequência de páginas de referência separadas por espaço: ")
+    sequencia_paginas = [int(pagina) for pagina in sequencia_input.split()]
     
-    # Inicia a simulação
-    simulacao = SimulacaoSegundaChance(paginas, quadros)
-    simulacao.iniciar_simulacao()
-
+    simular_fifo_clock(capacidade, sequencia_paginas)
 
 if __name__ == "__main__":
     main()
